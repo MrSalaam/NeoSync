@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoSync – AI Productivity</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar glass" id="header">
+  <div class="container nav-container">
+    <div class="logo">NeoSync</div>
+
+    <nav class="desktop-nav">
+      <a href="#">Features</a>
+      <a href="#">How</a>
+      <a href="#">Pricing</a>
+      <a href="#">Testimonials</a>
+      
+      <label class="switch" id="darkModeSwitch">
+        <input type="checkbox" id="darkToggle" />
+        <span class="slider"></span>
+      </label>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger" id="hamburger">☰</div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">FAQ</a>
+    <label class="switch" id="mobileDarkModeSwitch">
+        <input type="checkbox" id="mobileDarkToggle" />
+        <span class="slider"></span>
+    </label>
+  </div>
+</header>
+
+<main class="page-content">
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="text">
+        <h1><span>Smart Productivity</span> powered by AI.</h1>
+        <p>NeoSync helps you automate your schedule, tasks, and focus time with intelligent reminders designed for your workflow.</p>
+        <div class="actions">
+          <a href="#" class="btn primary">Get Started</a>
+          <a href="#" class="btn secondary">Watch Demo ▶</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./images/undraw_web-app_141a.svg" alt="App Mockup">
+      </div>
+    </div>
+  </section>
+
+
+<section class="features alt-features">
+  <div class="container split-grid">
+    <div class="feature-list">
+      <button class="feature-tab active" data-id="f1">AI Engine</button>
+      <button class="feature-tab" data-id="f2">Real-time Sync</button>
+      <button class="feature-tab" data-id="f3">Smart Scheduler</button>
+      <button class="feature-tab" data-id="f4">Private & Secure</button>
+      <button class="feature-tab" data-id="f5">24/7 Support</button>
+    </div>
+
+    <div class="feature-display">
+      <div class="feature-panel active" id="f1">
+        <img src="icons/ai-brain.svg" alt="">
+        <h3>AI Smart Engine</h3>
+        <p>NeoSync learns your workflow and schedules tasks intelligently without interruptions.</p>
+      </div>
+      <div class="feature-panel" id="f2">
+        <img src="icons/clock-sync.svg" alt="">
+        <h3>Real-time Sync</h3>
+        <p>Your data updates instantly across all devices — no lag, no limits.</p>
+      </div>
+      <div class="feature-panel" id="f3">
+        <img src="icons/calendar-check.svg" alt="">
+        <h3>Smart Scheduler</h3>
+        <p>Plan days automatically with context-aware blocks and reminders.</p>
+      </div>
+      <div class="feature-panel" id="f4">
+        <img src="icons/security-lock.svg" alt="">
+        <h3>Private & Secure</h3>
+        <p>Bank-grade encryption. NeoSync never shares your data — ever.</p>
+      </div>
+      <div class="feature-panel" id="f5">
+        <img src="icons/support-agent.svg" alt="">
+        <h3>24/7 Live Support</h3>
+        <p>Talk to humans, not bots. Anytime. Anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="how-it-works" id="how">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="timeline">
+      <div class="timeline-step">
+        <div class="timeline-icon">👤</div>
+        <div class="timeline-content">
+          <h3>Create an Account</h3>
+          <p>Sign up instantly and personalize your workspace. No credit card needed.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-icon">🔗</div>
+        <div class="timeline-content">
+          <h3>Connect Your Tools</h3>
+          <p>Integrate calendars, apps, and services in one clean dashboard.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-icon">⚡</div>
+        <div class="timeline-content">
+          <h3>Automate Your Day</h3>
+          <p>NeoSync uses AI to plan your perfect day with zero effort.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Simple, Transparent Pricing</h2>
+
+    <div class="toggle-wrapper">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle" />
+        <span class="slider"></span>
+      </label>
+      <span>Yearly</span>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="badge">Starter</div>
+        <h3 class="price" data-monthly="$0" data-yearly="$0">$0</h3>
+        <ul>
+          <li>✔ 1 Workspace</li>
+          <li>✔ 3 Projects</li>
+          <li>✔ Email Support</li>
+        </ul>
+        <a href="#" class="btn pricing-btn">Get Started</a>
+      </div>
+
+      <div class="pricing-card popular">
+        <div class="badge highlight">Pro — Most Popular</div>
+        <h3 class="price" data-monthly="$12" data-yearly="$99">$12</h3>
+        <ul>
+          <li>✔ Unlimited Workspaces</li>
+          <li>✔ Team Collaboration</li>
+          <li>✔ Priority Support</li>
+        </ul>
+        <a href="#" class="btn pricing-btn">Start Free Trial</a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="badge">Enterprise</div>
+        <h3 class="price" data-monthly="Custom" data-yearly="Custom">Custom</h3>
+        <ul>
+          <li>✔ Custom Integrations</li>
+          <li>✔ Dedicated Manager</li>
+          <li>✔ 24/7 Support</li>
+        </ul>
+        <a href="#" class="btn pricing-btn">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2 class="section-title">Loved by teams worldwide</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-text">"NeoSync has transformed how I plan my day. It's so intuitive, it feels like magic."</div>
+        <div class="testimonial-meta">
+          <img src="https://i.pravatar.cc/64?img=5" alt="User Avatar" />
+          <div>
+            <strong>Sarah T.</strong>
+            <span>Product Designer, Reaktor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card highlight">
+        <div class="testimonial-text">"We went from scattered to synced in 2 days. My team never misses a beat now."</div>
+        <div class="testimonial-meta">
+          <img src="https://i.pravatar.cc/64?img=8" alt="User Avatar" />
+          <div>
+            <strong>James C.</strong>
+            <span>Team Lead, Vanta</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">"Honestly the cleanest interface I’ve used this year. Zero clutter, just flow."</div>
+        <div class="testimonial-meta">
+          <img src="https://i.pravatar.cc/64?img=3" alt="User Avatar" />
+          <div>
+            <strong>Ella M.</strong>
+            <span>Engineer, Linear</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+ <section class="impact-pro" id="impact">
+  <div class="container">
+    <h2 class="section-title">Backed by numbers</h2>
+    <p class="impact-sub">We’ve quietly helped thousands of teams get synced.</p>
+
+    <div class="impact-strip">
+      <div class="impact-metric">
+        <span class="count" data-target="20000">0</span>
+        <p>Teams onboarded</p>
+      </div>
+      <div class="impact-metric">
+        <span class="count" data-target="1200000">0</span>
+        <p>Tasks scheduled</p>
+      </div>
+      <div class="impact-metric">
+        <span class="count" data-target="98">0</span>
+        <p>Countries using NeoSync</p>
+      </div>
+      <div class="impact-metric">
+        <span class="count" data-target="99.99">0</span>
+        <p>Uptime guarantee</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <section class="integrations" id="integrations">
+  <div class="container">
+    <h2 class="section-title">Connect Your Stack</h2>
+    <p class="integration-sub">Works seamlessly with your favorite tools</p>
+
+    <div class="integration-grid">
+      <div class="integration-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />Figma</div>
+      <div class="integration-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" />Slack</div>
+      <div class="integration-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />GitHub</div>
+      <div class="integration-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" />Google</div>
+      <div class="integration-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" />Trello</div>
+        <div class="integration-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" />Notion</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="comparison">
+  <div class="container">
+    <h2 class="section-title">Compare Plans</h2>
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Features</th>
+            <th>Basic</th>
+            <th>Pro</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Unlimited Projects</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>Team Collaboration</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>Advanced Analytics</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>24/7 Support</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️ Priority</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+ <section class="cta" id="get-started">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ready to sync your workflow?</h2>
+      <p>Start free. Cancel anytime. No credit card required.</p>
+      <a href="#" class="btn cta-btn">Get Started</a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <h3 class="logo">Neosync</h3>
+      <p>Built for modern teams and creators. Join us to do more with less.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Neosync. All rights reserved.</p>
+    <div class="footer-socials">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+</body>
+</html>
